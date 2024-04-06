@@ -240,6 +240,14 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     justify-content: start;
 }
 
+#piece .dti{
+    display: block;
+}
+
+#piece .mbi{
+    display: none;
+}
+
 /* MQ style */
 @media all and (max-width:768px) {
 #piece{
@@ -254,7 +262,7 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 #piece .swiper-wrapper{
             position: relative;
             width: 92vw;
-            height: 32vh;
+            height: 480px;
             padding: 0;
             margin: 0 auto;
 }
@@ -264,11 +272,29 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 #piece .options{
+width: 92vw;
 position: relative;
-z-index: 10;
 padding: 0;
 margin: 0;
+left: 0;
 margin-bottom: 100px;
+}
+
+#piece .dti{
+    display: none;
+}
+
+#piece .mbi{
+    display: block;
+}
+
+#piece .swiper-pagination{
+    margin-top: 28px;
+}
+
+#piece .swiper-pagination > .swiper-pagination-bullet {
+    height: 5px;
+    width: 21px;
 }
 }
     </style>
@@ -277,8 +303,14 @@ margin-bottom: 100px;
         <div class="swiper">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><a href="#"><img src="https://www.auto-platinium.com/modules/fsbanners//img/pics/62309fc0382d3.png" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://www.auto-platinium.com/modules/fsbanners//img/pics/61b9fec335453.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#">
+                    <img class="dti" src="https://www.auto-platinium.com/modules/fsbanners//img/pics/62309fc0382d3.png" alt="">
+                    <img class="mbi" src="https://www.auto-platinium.com/modules/fsbanners//img/pics/61b9fec5dfded.jpg" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="#">
+                    <img class="dti" src="https://www.auto-platinium.com/modules/fsbanners//img/pics/61b9fec335453.jpg" alt="">
+                    <img class="mbi" src="https://www.auto-platinium.com/modules/fsbanners//img/pics/61b9fec5dfded.jpg" alt="">
+                </a></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
